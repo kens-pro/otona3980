@@ -1,1367 +1,689 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <!-- Google Tag Manager -->
-<script>
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id=GTM-WHZRZKGG'+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WHZRZKGG');
-</script>
-<!-- End Google Tag Manager -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>大人のピアノレッスン｜上質な音楽時間を始めませんか｜月額3,980円</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #6B7280;
-            --primary-light: #9CA3AF;
-            --primary-dark: #374151;
-            --accent: #059669;
-            --accent-light: #10B981;
-            --text: #1F2937;
-            --text-light: #6B7280;
-            --text-muted: #9CA3AF;
-            --bg-light: #FEFEFE;
-            --bg-section: #F9FAFB;
-            --bg-cream: #FFFBF7;
-            --gold: #D4AF37;
-            --white: #FFFFFF;
-            --border-light: #E5E7EB;
-            --shadow-soft: rgba(0, 0, 0, 0.05);
-            --shadow-medium: rgba(0, 0, 0, 0.1);
-            --danger-red: #DC2626;
-            --success-green: #059669;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Noto Sans JP', sans-serif;
-            line-height: 1.7;
-            color: var(--text);
-            background-color: var(--bg-light);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Noto Serif JP', serif;
-            font-weight: 500;
-            letter-spacing: 0.02em;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
-            padding: 60px 0 80px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: 
-                radial-gradient(circle at 20% 80%, rgba(6, 182, 212, 0.03) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.03) 0%, transparent 50%);
-        }
-
-        .header-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 20px;
-            position: relative;
-            z-index: 1;
-            text-align: center;
-        }
-
-        .header-badge {
-            display: inline-block;
-            background-color: var(--white);
-            color: var(--primary-dark);
-            font-size: 14px;
-            font-weight: 500;
-            padding: 12px 24px;
-            border-radius: 30px;
-            margin-bottom: 24px;
-            box-shadow: 0 4px 12px var(--shadow-soft);
-            border: 1px solid var(--border-light);
-            letter-spacing: 0.02em;
-        }
-
-        h1 {
-            font-size: 36px;
-            line-height: 1.4;
-            margin-bottom: 16px;
-            color: var(--text);
-            font-weight: 500;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .sub-copy {
-            font-size: 18px;
-            color: var(--text-light);
-            margin-bottom: 32px;
-            line-height: 1.6;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-price-display {
-            background-color: var(--white);
-            border: 2px solid var(--accent);
-            border-radius: 16px;
-            padding: 24px 32px;
-            display: inline-block;
-            margin: 0 auto 32px;
-            box-shadow: 0 8px 24px var(--shadow-medium);
-            text-align: center;
-            max-width: 400px;
-        }
-
-        .hero-price-display .label {
-            font-size: 14px;
-            font-weight: 500;
-            color: var(--accent);
-            background-color: rgba(5, 150, 105, 0.1);
-            padding: 6px 16px;
-            border-radius: 20px;
-            display: inline-block;
-            margin-bottom: 12px;
-            letter-spacing: 0.02em;
-        }
-
-        .price-line {
-            display: flex;
-            justify-content: center;
-            align-items: baseline;
-            gap: 8px;
-            margin-bottom: 8px;
-        }
-
-        .hero-price-display .price-main {
-            font-size: 48px;
-            font-weight: 600;
-            color: var(--accent);
-            font-family: 'Noto Serif JP', serif;
-        }
-
-        .hero-price-display .unit {
-            font-size: 20px;
-            font-weight: 500;
-            color: var(--text);
-        }
-
-        .hero-price-display .note {
-            font-size: 13px;
-            color: var(--text-muted);
-            margin-top: 4px;
-        }
-
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            margin: 24px auto;
-            flex-wrap: wrap;
-            max-width: 600px;
-        }
-
-        .trust-badges .badge-item {
-            background-color: var(--white);
-            color: var(--text);
-            padding: 12px 20px;
-            border-radius: 24px;
-            font-size: 14px;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            border: 1px solid var(--border-light);
-            box-shadow: 0 2px 8px var(--shadow-soft);
-        }
-
-        .trust-badges .badge-item i {
-            color: var(--accent);
-            font-size: 16px;
-        }
-
-        .local-info-fv {
-            font-size: 15px;
-            color: var(--text-light);
-            margin-bottom: 24px;
-        }
-
-        /* CTA Button */
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--accent), var(--accent-light));
-            color: white;
-            font-size: 16px;
-            font-weight: 600;
-            text-decoration: none;
-            padding: 16px 32px;
-            border-radius: 30px;
-            box-shadow: 0 4px 16px rgba(5, 150, 105, 0.3);
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            letter-spacing: 0.02em;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
-        }
-
-        .cta-wrapper {
-            text-align: center;
-            margin: 24px 0;
-        }
-
-        .micro-copy {
-            font-size: 13px;
-            color: var(--text-muted);
-            margin-top: 12px;
-            display: block;
-        }
-
-        /* Main Content */
-        .container {
-            max-width: 1000px;
-            margin: -40px auto 0;
-            padding: 0 20px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .main-card {
-            background: var(--white);
-            border-radius: 20px;
-            box-shadow: 0 8px 32px var(--shadow-soft);
-            padding: 48px;
-            margin-bottom: 48px;
-            border: 1px solid var(--border-light);
-        }
-
-        section {
-            margin: 48px 0;
-        }
-
-        h2 {
-            font-size: 28px;
-            margin-bottom: 32px;
-            color: var(--text);
-            text-align: center;
-            position: relative;
-            padding-bottom: 16px;
-        }
-
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 2px;
-            background: var(--accent);
-        }
-
-        h3 {
-            font-size: 20px;
-            color: var(--text);
-            margin-bottom: 16px;
-            font-weight: 500;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.8;
-            margin-bottom: 16px;
-            color: var(--text);
-        }
-
-        .lead {
-            font-size: 18px;
-            line-height: 1.7;
-            color: var(--text);
-            margin-bottom: 32px;
-            text-align: center;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .highlight {
-            color: var(--accent);
-            font-weight: 600;
-            background: linear-gradient(transparent 70%, rgba(5, 150, 105, 0.2) 30%);
-            padding: 0 4px;
-        }
-
-        /* Features Grid */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 24px;
-            margin: 40px 0;
-        }
-
-        .feature-card {
-            background: var(--bg-section);
-            border-radius: 16px;
-            padding: 32px 24px;
-            text-align: center;
-            border: 1px solid var(--border-light);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px var(--shadow-medium);
-        }
-
-        .feature-icon {
-            width: 64px;
-            height: 64px;
-            background: linear-gradient(135deg, var(--accent), var(--accent-light));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            color: var(--white);
-            font-size: 24px;
-        }
-
-        .feature-title {
-            font-weight: 600;
-            font-size: 18px;
-            margin-bottom: 12px;
-            color: var(--text);
-        }
-
-        .feature-card p {
-            font-size: 14px;
-            color: var(--text-light);
-            line-height: 1.6;
-            margin-bottom: 0;
-        }
-
-        /* Price Section */
-        .price-impact-section {
-            background-color: var(--bg-cream);
-            padding: 48px 40px;
-            margin: 48px -48px;
-            border-radius: 16px;
-            border: 1px solid var(--border-light);
-        }
-
-        .comparison-table-wrapper {
-            overflow-x: auto;
-            margin: 32px 0;
-        }
-
-        .comparison-table {
-            width: 100%;
-            min-width: 500px;
-            border-collapse: collapse;
-            background-color: var(--white);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 16px var(--shadow-soft);
-        }
-
-        .comparison-table th,
-        .comparison-table td {
-            padding: 16px;
-            text-align: center;
-            border-bottom: 1px solid var(--border-light);
-            font-size: 15px;
-        }
-
-        .comparison-table th {
-            background-color: var(--bg-section);
-            color: var(--text);
-            font-weight: 600;
-        }
-
-        .comparison-table td:first-child {
-            text-align: left;
-            font-weight: 500;
-        }
-
-        .comparison-table .our-course td {
-            background-color: rgba(5, 150, 105, 0.05);
-            font-weight: 600;
-        }
-
-        .comparison-table .price-cell {
-            font-weight: 600;
-            font-size: 18px;
-        }
-
-        .comparison-table .our-course .price-cell {
-            color: var(--success-green);
-            font-size: 20px;
-        }
-
-        /* Reason Section */
-        .reason-section {
-            background-color: var(--bg-section);
-            padding: 48px 40px;
-            border-radius: 16px;
-            margin: 48px 0;
-            border: 1px solid var(--border-light);
-        }
-
-        /* Testimonials */
-        .testimonial {
-            background-color: var(--white);
-            border-radius: 16px;
-            padding: 32px;
-            margin: 32px 0;
-            box-shadow: 0 4px 16px var(--shadow-soft);
-            border-left: 4px solid var(--accent);
-        }
-
-        .star-rating {
-            margin-bottom: 16px;
-        }
-
-        .star-rating .fas.fa-star {
-            color: var(--gold);
-            margin-right: 2px;
-        }
-
-        .testimonial-content {
-            font-size: 16px;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            color: var(--text);
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-        }
-
-        .author-avatar {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            margin-right: 16px;
-            background-color: var(--bg-section);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid var(--border-light);
-        }
-
-        .author-avatar i {
-            font-size: 20px;
-            color: var(--text-light);
-        }
-
-        .author-name {
-            font-weight: 600;
-            font-size: 15px;
-            color: var(--text);
-        }
-
-        .author-info {
-            font-size: 13px;
-            color: var(--text-light);
-        }
-
-        /* Gallery */
-        .lesson-gallery-section h2 {
-            margin-bottom: 16px;
-        }
-
-        .section-lead {
-            text-align: center;
-            color: var(--text-light);
-            margin-bottom: 32px;
-            font-size: 15px;
-        }
-
-        .lesson-gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .gallery-item {
-            aspect-ratio: 4 / 3;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 16px var(--shadow-soft);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--bg-section);
-            border: 1px solid var(--border-light);
-        }
-
-        .gallery-item i {
-            font-size: 48px;
-            color: var(--text-light);
-        }
-
-        /* FAQ */
-        .faq-section {
-            margin: 48px 0;
-        }
-
-        .faq-item {
-            background: var(--white);
-            border-radius: 12px;
-            margin-bottom: 16px;
-            overflow: hidden;
-            border: 1px solid var(--border-light);
-        }
-
-        .faq-question {
-            padding: 20px;
-            background-color: var(--bg-section);
-            color: var(--text);
-            font-weight: 500;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 16px;
-        }
-
-        .faq-question i {
-            transition: transform 0.3s ease;
-            color: var(--text-light);
-        }
-
-        .faq-answer {
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease-out, padding 0.4s ease-out;
-        }
-
-        .faq-answer p {
-            padding: 20px 0;
-            margin-bottom: 0;
-            border-top: 1px solid var(--border-light);
-            color: var(--text);
-        }
-
-        .faq-item.active .faq-answer {
-            max-height: 500px;
-        }
-
-        .faq-item.active .faq-question i {
-            transform: rotate(180deg);
-        }
-
-        /* Locations */
-        .locations {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            margin: 32px 0;
-        }
-
-        .location-card-link {
-            text-decoration: none;
-        }
-
-        .location-card {
-            background: var(--white);
-            border-radius: 12px;
-            padding: 24px 20px;
-            text-align: center;
-            box-shadow: 0 4px 16px var(--shadow-soft);
-            transition: transform 0.3s ease;
-            height: 100%;
-            border: 1px solid var(--border-light);
-        }
-
-        .location-card:hover {
-            transform: translateY(-4px);
-        }
-
-        .location-icon {
-            color: var(--accent);
-            font-size: 24px;
-            margin-bottom: 12px;
-        }
-
-        .location-card p strong {
-            color: var(--text);
-            font-size: 16px;
-        }
-
-        .location-card p:last-child {
-            color: var(--text-light);
-            font-size: 14px;
-            margin-top: 4px;
-        }
-
-        /* Application Flow */
-        .application-flow-section {
-            margin: 48px 0;
-            text-align: center;
-        }
-
-        .flow-steps {
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-start;
-            gap: 24px;
-            flex-wrap: wrap;
-            margin-top: 40px;
-        }
-
-        .flow-step {
-            flex-basis: 200px;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-        }
-
-        .flow-step:not(:last-child)::after {
-            content: '\f061';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: absolute;
-            right: -20px;
-            top: 40%;
-            transform: translateY(-50%);
-            font-size: 16px;
-            color: var(--text-light);
-            display: none;
-        }
-
-        @media (min-width: 769px) {
-            .flow-step:not(:last-child)::after {
-                display: block;
-            }
-        }
-
-        .flow-step-icon {
-            width: 64px;
-            height: 64px;
-            background: linear-gradient(135deg, var(--accent), var(--accent-light));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 16px;
-            color: var(--white);
-            font-size: 24px;
-        }
-
-        .flow-step h3 {
-            font-size: 16px;
-            color: var(--text);
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-
-        .flow-step p {
-            font-size: 14px;
-            line-height: 1.6;
-            color: var(--text-light);
-            margin-bottom: 0;
-        }
-
-        /* Final CTA */
-        .final-cta-container {
-            text-align: center;
-            margin: 48px 0;
-            padding: 48px 32px;
-            background: linear-gradient(135deg, var(--bg-section) 0%, var(--bg-cream) 100%);
-            border-radius: 20px;
-            border: 1px solid var(--border-light);
-        }
-
-        .final-cta-container h3 {
-            font-size: 24px;
-            color: var(--text);
-            margin-bottom: 16px;
-        }
-
-        .sub-heading-cta {
-            font-size: 16px;
-            color: var(--text-light);
-            margin-bottom: 32px;
-        }
-
-        /* Form */
-        .form-container {
-            max-width: 500px;
-            margin: 0 auto 24px;
-            background: var(--white);
-            padding: 32px;
-            border-radius: 16px;
-            box-shadow: 0 4px 16px var(--shadow-soft);
-            text-align: left;
-            border: 1px solid var(--border-light);
-        }
-
-        .form-container h3 {
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 24px;
-            color: var(--text);
-            font-size: 20px;
-        }
-
-        .form-container form {
-            display: grid;
-            gap: 20px;
-        }
-
-        .form-container label {
-            display: block;
-            margin-bottom: 6px;
-            font-weight: 500;
-            color: var(--text);
-            font-size: 14px;
-        }
-
-        .required {
-            color: var(--danger-red);
-            font-size: 12px;
-            margin-left: 4px;
-        }
-
-        .form-container input,
-        .form-container select,
-        .form-container textarea {
-            width: 100%;
-            padding: 12px 16px;
-            border: 1px solid var(--border-light);
-            border-radius: 8px;
-            font-size: 15px;
-            font-family: inherit;
-            transition: border-color 0.3s ease;
-        }
-
-        .form-container input:focus,
-        .form-container select:focus,
-        .form-container textarea:focus {
-            outline: none;
-            border-color: var(--accent);
-        }
-
-        .form-container button {
-            width: 100%;
-            margin-top: 16px;
-        }
-
-        /* Footer */
-        .site-footer {
-            background-color: var(--primary-dark);
-            color: var(--white);
-            padding: 48px 20px 32px;
-            text-align: center;
-            margin-top: 64px;
-        }
-
-        .footer-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .footer-info {
-            margin-bottom: 32px;
-        }
-
-        .company-name {
-            font-size: 20px;
-            font-weight: 500;
-            margin-bottom: 16px;
-            color: var(--white);
-            font-family: 'Noto Serif JP', serif;
-        }
-
-        .footer-phone-button {
-            display: inline-block;
-            background-color: var(--white);
-            color: var(--primary-dark);
-            padding: 12px 24px;
-            border-radius: 24px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 8px var(--shadow-soft);
-        }
-
-        .footer-phone-button i {
-            margin-right: 8px;
-        }
-
-        .footer-phone-button:hover {
-            background-color: var(--bg-section);
-            transform: translateY(-2px);
-        }
-
-        .phone-note {
-            font-size: 13px;
-            color: rgba(255, 255, 255, 0.8);
-            margin-top: 8px;
-        }
-
-        .footer-social {
-            margin-bottom: 32px;
-        }
-
-        .footer-social p {
-            font-size: 15px;
-            margin-bottom: 16px;
-            color: var(--white);
-        }
-
-        .social-icons a {
-            color: var(--white);
-            font-size: 24px;
-            margin: 0 12px;
-            transition: color 0.3s ease, transform 0.3s ease;
-            display: inline-block;
-        }
-
-        .social-icons a:hover {
-            color: var(--accent-light);
-            transform: scale(1.1);
-        }
-
-        .footer-copyright p {
-            font-size: 13px;
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 0;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .header-container {
-                padding: 0 16px;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            .sub-copy {
-                font-size: 16px;
-            }
-
-            .hero-price-display {
-                padding: 20px 24px;
-                margin-bottom: 24px;
-            }
-
-            .hero-price-display .price-main {
-                font-size: 40px;
-            }
-
-            .trust-badges {
-                gap: 12px;
-            }
-
-            .trust-badges .badge-item {
-                font-size: 13px;
-                padding: 10px 16px;
-            }
-
-            .container {
-                margin-top: -32px;
-                padding: 0 16px;
-            }
-
-            .main-card {
-                padding: 32px 24px;
-            }
-
-            h2 {
-                font-size: 24px;
-                margin-bottom: 24px;
-            }
-
-            .price-impact-section {
-                margin: 32px -24px;
-                padding: 32px 24px;
-            }
-
-            .reason-section {
-                padding: 32px 24px;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .testimonial {
-                padding: 24px 20px;
-            }
-
-            .flow-step {
-                flex-basis: calc(50% - 12px);
-                margin-bottom: 24px;
-            }
-
-            .flow-step:not(:last-child)::after {
-                display: none;
-            }
-
-            .final-cta-container {
-                padding: 32px 24px;
-            }
-
-            .form-container {
-                padding: 24px 20px;
-            }
-
-            .cta-button {
-                font-size: 15px;
-                padding: 14px 28px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 24px;
-            }
-
-            .header-badge {
-                font-size: 13px;
-                padding: 10px 20px;
-            }
-
-            .sub-copy {
-                font-size: 15px;
-            }
-
-            .hero-price-display .price-main {
-                font-size: 36px;
-            }
-
-            .trust-badges .badge-item {
-                flex-basis: 100%;
-                font-size: 12px;
-                padding: 8px 16px;
-            }
-
-            h2 {
-                font-size: 22px;
-            }
-
-            .flow-step {
-                flex-basis: 100%;
-            }
-
-            .final-cta-container h3 {
-                font-size: 20px;
-            }
-
-            .cta-button {
-                font-size: 14px;
-                padding: 12px 24px;
-            }
-        }
-        @media (max-width: 640px){
-  .form-container iframe { height: 2100px !important; }
-}
-
-    </style>
+  <meta charset="UTF-8">
+  <!-- Google Tag Manager -->
+  <script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id=GTM-WHZRZKGG'+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WHZRZKGG');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大人のピアノレッスン｜上質な音楽時間を始めませんか｜月額3,980円</title>
+  <meta name="description" content="大人のためのピアノレッスン。月額3,980円（半年限定）・入会金/施設費込み。滋賀・大津北部で開講。初心者歓迎、好きな曲から始められます。無料体験受付中。">
+
+  <!-- Canonical / OGP / Twitter -->
+  <link rel="canonical" href="https://kens-pro.github.io/otona3980/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="大人のピアノレッスン｜上質な音楽時間を始めませんか｜月額3,980円">
+  <meta property="og:description" content="大人のためのピアノレッスン。月額3,980円（半年限定）・入会金/施設費込み。滋賀・大津北部で開講。初心者歓迎、無料体験受付中。">
+  <meta property="og:url" content="https://kens-pro.github.io/otona3980/">
+  <meta property="og:image" content="https://kens-pro.github.io/otona3980/ogp.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico">
+
+  <!-- Fonts / Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary:#6B7280; --primary-light:#9CA3AF; --primary-dark:#374151;
+      --accent:#059669; --accent-light:#10B981;
+      --text:#1F2937; --text-light:#6B7280; --text-muted:#9CA3AF;
+      --bg-light:#FEFEFE; --bg-section:#F9FAFB; --bg-cream:#FFFBF7;
+      --gold:#D4AF37; --white:#FFFFFF; --border-light:#E5E7EB;
+      --shadow-soft:rgba(0,0,0,.05); --shadow-medium:rgba(0,0,0,.1);
+      --danger-red:#DC2626; --success-green:#059669;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+    body{
+      font-family:'Noto Sans JP',sans-serif;line-height:1.7;color:var(--text);background:var(--bg-light);
+      -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+    }
+    h1,h2,h3{font-family:'Noto Serif JP',serif;font-weight:500;letter-spacing:.02em}
+
+    /* Utility (SR only) */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+    /* Header */
+    header{background:linear-gradient(135deg,#F8FAFC 0%,#F1F5F9 100%);padding:60px 0 80px;position:relative;overflow:hidden}
+    header::before{
+      content:'';position:absolute;inset:0;
+      background-image:
+      radial-gradient(circle at 20% 80%,rgba(6,182,212,.03) 0%,transparent 50%),
+      radial-gradient(circle at 80% 20%,rgba(6,182,212,.03) 0%,transparent 50%);
+    }
+    .header-container{max-width:1000px;margin:0 auto;padding:0 20px;position:relative;z-index:1;text-align:center}
+    .header-badge{
+      display:inline-block;background:var(--white);color:var(--primary-dark);font-size:14px;font-weight:500;
+      padding:12px 24px;border-radius:30px;margin-bottom:24px;box-shadow:0 4px 12px var(--shadow-soft);border:1px solid var(--border-light);letter-spacing:.02em;
+    }
+    h1{font-size:36px;line-height:1.4;margin-bottom:16px;color:var(--text);font-weight:500;max-width:700px;margin-left:auto;margin-right:auto}
+    .sub-copy{font-size:18px;color:var(--text-light);margin-bottom:32px;line-height:1.6;max-width:600px;margin:0 auto 32px}
+    .sp-br{display:none}
+    .hero-price-display{
+      background:var(--white);border:2px solid var(--accent);border-radius:16px;padding:24px 32px;display:inline-block;margin:0 auto 32px;
+      box-shadow:0 8px 24px var(--shadow-medium);text-align:center;max-width:400px;
+    }
+    .hero-price-display .label{
+      font-size:14px;font-weight:500;color:var(--accent);background-color:rgba(5,150,105,.1);
+      padding:6px 16px;border-radius:20px;display:inline-block;margin-bottom:12px;letter-spacing:.02em;
+    }
+    .price-line{display:flex;justify-content:center;align-items:baseline;gap:8px;margin-bottom:8px}
+    .hero-price-display .price-main{font-size:48px;font-weight:600;color:var(--accent);font-family:'Noto Serif JP',serif}
+    .hero-price-display .unit{font-size:20px;font-weight:500;color:var(--text)}
+    .hero-price-display .note{font-size:13px;color:var(--text-muted);margin-top:4px}
+    .trust-badges{display:flex;justify-content:center;gap:16px;margin:24px auto;flex-wrap:wrap;max-width:600px}
+    .trust-badges .badge-item{
+      background:var(--white);color:var(--text);padding:12px 20px;border-radius:24px;font-size:14px;font-weight:500;display:flex;align-items:center;gap:8px;border:1px solid var(--border-light);box-shadow:0 2px 8px var(--shadow-soft)
+    }
+    .trust-badges .badge-item i{color:var(--accent);font-size:16px}
+    .local-info-fv{font-size:15px;color:var(--text-light);margin-bottom:24px}
+
+    /* CTA Button */
+    .cta-button{
+      display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent-light));color:#fff;font-size:16px;font-weight:600;text-decoration:none;
+      padding:16px 32px;border-radius:30px;box-shadow:0 4px 16px rgba(5,150,105,.3);transition:.3s;border:none;cursor:pointer;letter-spacing:.02em;
+    }
+    .cta-button:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(5,150,105,.4)}
+    .cta-wrapper{text-align:center;margin:24px 0}
+    .micro-copy{font-size:13px;color:var(--text-muted);margin-top:12px;display:block}
+
+    /* Main Content */
+    .container{max-width:1000px;margin:-40px auto 0;padding:0 20px;position:relative;z-index:2}
+    .main-card{background:var(--white);border-radius:20px;box-shadow:0 8px 32px var(--shadow-soft);padding:48px;margin-bottom:48px;border:1px solid var(--border-light)}
+    section{margin:48px 0}
+    h2{font-size:28px;margin-bottom:32px;color:var(--text);text-align:center;position:relative;padding-bottom:16px}
+    h2::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60px;height:2px;background:var(--accent)}
+    h3{font-size:20px;color:var(--text);margin-bottom:16px;font-weight:500}
+    p{font-size:16px;line-height:1.8;margin-bottom:16px;color:var(--text)}
+    .lead{font-size:18px;line-height:1.7;color:var(--text);margin-bottom:32px;text-align:center;max-width:700px;margin-left:auto;margin-right:auto}
+    .highlight{color:var(--accent);font-weight:600;background:linear-gradient(transparent 70%,rgba(5,150,105,.2) 30%);padding:0 4px}
+
+    /* Features Grid */
+    .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;margin:40px 0}
+    .feature-card{background:var(--bg-section);border-radius:16px;padding:32px 24px;text-align:center;border:1px solid var(--border-light);transition:.3s}
+    .feature-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px var(--shadow-medium)}
+    .feature-icon{
+      width:64px;height:64px;background:linear-gradient(135deg,var(--accent),var(--accent-light));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:#fff;font-size:24px
+    }
+    .feature-title{font-weight:600;font-size:18px;margin-bottom:12px;color:var(--text)}
+    .feature-card p{font-size:14px;color:var(--text-light);line-height:1.6;margin-bottom:0}
+
+    /* Price Section */
+    .price-impact-section{background:var(--bg-cream);padding:48px 40px;margin:48px -48px;border-radius:16px;border:1px solid var(--border-light)}
+    .comparison-table-wrapper{overflow-x:auto;margin:32px 0}
+    .comparison-table{width:100%;min-width:500px;border-collapse:collapse;background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 4px 16px var(--shadow-soft)}
+    .comparison-table th,.comparison-table td{padding:16px;text-align:center;border-bottom:1px solid var(--border-light);font-size:15px}
+    .comparison-table th{background:var(--bg-section);color:var(--text);font-weight:600}
+    .comparison-table td:first-child{text-align:left;font-weight:500}
+    .comparison-table .our-course td{background:rgba(5,150,105,.05);font-weight:600}
+    .comparison-table .price-cell{font-weight:600;font-size:18px}
+    .comparison-table .our-course .price-cell{color:var(--success-green);font-size:20px}
+
+    /* Reason Section */
+    .reason-section{background:var(--bg-section);padding:48px 40px;border-radius:16px;margin:48px 0;border:1px solid var(--border-light)}
+
+    /* Testimonials */
+    .testimonial{background:var(--white);border-radius:16px;padding:32px;margin:32px 0;box-shadow:0 4px 16px var(--shadow-soft);border-left:4px solid var(--accent)}
+    .star-rating{margin-bottom:16px}
+    .star-rating .fas.fa-star{color:var(--gold);margin-right:2px}
+    .testimonial-content{font-size:16px;line-height:1.8;margin-bottom:20px;color:var(--text)}
+    .testimonial-author{display:flex;align-items:center}
+    .author-avatar{width:48px;height:48px;border-radius:50%;margin-right:16px;background:var(--bg-section);display:flex;align-items:center;justify-content:center;border:2px solid var(--border-light)}
+    .author-avatar i{font-size:20px;color:var(--text-light)}
+    .author-name{font-weight:600;font-size:15px;color:var(--text)}
+    .author-info{font-size:13px;color:var(--text-light)}
+
+    /* Gallery */
+    .lesson-gallery-section h2{margin-bottom:16px}
+    .section-lead{text-align:center;color:var(--text-light);margin-bottom:32px;font-size:15px}
+    .lesson-gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+    .gallery-item{aspect-ratio:4/3;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px var(--shadow-soft);display:flex;align-items:center;justify-content:center;background:var(--bg-section);border:1px solid var(--border-light)}
+    .gallery-item i{font-size:48px;color:var(--text-light)}
+
+    /* FAQ */
+    .faq-section{margin:48px 0}
+    .faq-item{background:var(--white);border-radius:12px;margin-bottom:16px;overflow:hidden;border:1px solid var(--border-light)}
+    .faq-question{padding:20px;background:var(--bg-section);color:var(--text);font-weight:500;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:16px}
+    .faq-question i{transition:transform .3s ease;color:var(--text-light)}
+    .faq-answer{padding:0 20px;max-height:0;overflow:hidden;transition:max-height .4s ease-out,padding .4s ease-out}
+    .faq-answer p{padding:20px 0;margin-bottom:0;border-top:1px solid var(--border-light);color:var(--text)}
+    .faq-item.active .faq-answer{max-height:500px}
+    .faq-item.active .faq-question i{transform:rotate(180deg)}
+
+    /* Locations */
+    .locations{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin:32px 0}
+    .location-card-link{text-decoration:none}
+    .location-card{background:var(--white);border-radius:12px;padding:24px 20px;text-align:center;box-shadow:0 4px 16px var(--shadow-soft);transition:transform .3s;height:100%;border:1px solid var(--border-light)}
+    .location-card:hover{transform:translateY(-4px)}
+    .location-icon{color:var(--accent);font-size:24px;margin-bottom:12px}
+    .location-card p strong{color:var(--text);font-size:16px}
+    .location-card p:last-child{color:var(--text-light);font-size:14px;margin-top:4px}
+
+    /* Application Flow */
+    .application-flow-section{margin:48px 0;text-align:center}
+    .flow-steps{display:flex;justify-content:space-around;align-items:flex-start;gap:24px;flex-wrap:wrap;margin-top:40px}
+    .flow-step{flex-basis:200px;text-align:center;padding:20px;position:relative}
+    .flow-step:not(:last-child)::after{
+      content:'\f061';font-family:'Font Awesome 6 Free';font-weight:900;position:absolute;right:-20px;top:40%;transform:translateY(-50%);font-size:16px;color:var(--text-light);display:none;
+    }
+    @media (min-width:769px){.flow-step:not(:last-child)::after{display:block}}
+    .flow-step-icon{width:64px;height:64px;background:linear-gradient(135deg,var(--accent),var(--accent-light));border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:#fff;font-size:24px}
+    .flow-step h3{font-size:16px;color:var(--text);margin-bottom:8px;font-weight:600}
+    .flow-step p{font-size:14px;line-height:1.6;color:var(--text-light);margin-bottom:0}
+
+    /* Final CTA */
+    .final-cta-container{text-align:center;margin:48px 0;padding:48px 32px;background:linear-gradient(135deg,var(--bg-section) 0%,var(--bg-cream) 100%);border-radius:20px;border:1px solid var(--border-light)}
+    .final-cta-container h3{font-size:24px;color:var(--text);margin-bottom:16px}
+    .sub-heading-cta{font-size:16px;color:var(--text-light);margin-bottom:32px}
+
+    /* Form */
+    .form-container{max-width:500px;margin:0 auto 24px;background:var(--white);padding:32px;border-radius:16px;box-shadow:0 4px 16px var(--shadow-soft);text-align:left;border:1px solid var(--border-light)}
+    .form-container h3{text-align:center;margin-top:0;margin-bottom:24px;color:var(--text);font-size:20px}
+    .form-container form{display:grid;gap:20px}
+    .form-container label{display:block;margin-bottom:6px;font-weight:500;color:var(--text);font-size:14px}
+    .required{color:var(--danger-red);font-size:12px;margin-left:4px}
+    .form-container input,.form-container select,.form-container textarea{
+      width:100%;padding:12px 16px;border:1px solid var(--border-light);border-radius:8px;font-size:15px;font-family:inherit;transition:border-color .3s ease
+    }
+    .form-container input:focus,.form-container select:focus,.form-container textarea:focus{outline:none;border-color:var(--accent)}
+    .form-container button{width:100%;margin-top:16px}
+
+    /* Footer */
+    .site-footer{background:var(--primary-dark);color:#fff;padding:48px 20px 32px;text-align:center;margin-top:64px}
+    .footer-container{max-width:800px;margin:0 auto}
+    .footer-info{margin-bottom:32px}
+    .company-name{font-size:20px;font-weight:500;margin-bottom:16px;color:#fff;font-family:'Noto Serif JP',serif}
+    .footer-phone-button{
+      display:inline-block;background:#fff;color:var(--primary-dark);padding:12px 24px;border-radius:24px;text-decoration:none;font-weight:500;font-size:16px;transition:.3s;box-shadow:0 2px 8px var(--shadow-soft)
+    }
+    .footer-phone-button i{margin-right:8px}
+    .footer-phone-button:hover{background:var(--bg-section);transform:translateY(-2px)}
+    .phone-note{font-size:13px;color:rgba(255,255,255,.8);margin-top:8px}
+    .footer-social{margin-bottom:32px}
+    .footer-social p{font-size:15px;margin-bottom:16px;color:#fff}
+    .social-icons a{color:#fff;font-size:24px;margin:0 12px;transition:color .3s,transform .3s;display:inline-block}
+    .social-icons a:hover{color:var(--accent-light);transform:scale(1.1)}
+    .footer-copyright p{font-size:13px;color:rgba(255,255,255,.7);margin-bottom:0}
+
+    /* Responsive */
+    @media (max-width:768px){
+      .header-container{padding:0 16px}
+      h1{font-size:28px}
+      .sub-copy{font-size:16px}
+      .hero-price-display{padding:20px 24px;margin-bottom:24px}
+      .hero-price-display .price-main{font-size:40px}
+      .trust-badges{gap:12px}
+      .trust-badges .badge-item{font-size:13px;padding:10px 16px}
+      .container{margin-top:-32px;padding:0 16px}
+      .main-card{padding:32px 24px}
+      h2{font-size:24px;margin-bottom:24px}
+      .price-impact-section{margin:32px -24px;padding:32px 24px}
+      .reason-section{padding:32px 24px}
+      .features-grid{grid-template-columns:1fr;gap:20px}
+      .testimonial{padding:24px 20px}
+      .flow-step{flex-basis:calc(50% - 12px);margin-bottom:24px}
+      .flow-step:not(:last-child)::after{display:none}
+      .final-cta-container{padding:32px 24px}
+      .form-container{padding:24px 20px}
+      .cta-button{font-size:15px;padding:14px 28px}
+    }
+    @media (max-width:480px){
+      h1{font-size:24px}
+      .header-badge{font-size:13px;padding:10px 20px}
+      .sub-copy{font-size:15px}
+      .hero-price-display .price-main{font-size:36px}
+      .trust-badges .badge-item{flex-basis:100%;font-size:12px;padding:8px 16px}
+      h2{font-size:22px}
+      .flow-step{flex-basis:100%}
+      .final-cta-container h3{font-size:20px}
+      .cta-button{font-size:14px;padding:12px 24px}
+      .sp-br{display:inline}
+    }
+  </style>
+
+  <!-- 構造化データ（Organization + FAQ） -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"株式会社トリイ",
+    "url":"https://kens-pro.github.io/otona3980/",
+    "telephone":"+81-740-22-2063",
+    "sameAs":["https://www.instagram.com/torii__music/","https://x.com/toriimusic"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"本当に初心者でも大丈夫でしょうか？",
+       "acceptedAnswer":{"@type":"Answer","text":"はい、もちろんです。当教室の生徒様の約60%はピアノ未経験者からお始めいただいております。楽譜が読めなくても、丁寧にご指導いたしますのでご安心ください。"}},
+      {"@type":"Question","name":"自宅にピアノがなくても大丈夫ですか？",
+       "acceptedAnswer":{"@type":"Answer","text":"復習用の鍵盤楽器があるとより身につきやすくなります。種類や置き場所などはお気軽にご相談ください。"}},
+      {"@type":"Question","name":"何歳まで受講できますか？",
+       "acceptedAnswer":{"@type":"Answer","text":"年齢制限はございません。現在、20代から80代までの幅広い年代の方にお楽しみいただいております。"}},
+      {"@type":"Question","name":"どのような講師の方ですか？",
+       "acceptedAnswer":{"@type":"Answer","text":"全員が音楽大学卒業または同等の資格や指導力を持ち、大人への指導経験が豊富です。優しく丁寧にご指導いたします。"}}
+    ]
+  }
+  </script>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript>
-<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHZRZKGG"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHZRZKGG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-    <header>
-        <div class="header-container">
-            <div class="header-badge">大人のピアノレッスン｜月額3,980円・半年限定</div>
-            <h1>人生に、美しい音楽の時間を。<br>大人のためのピアノレッスン</h1>
-            <p class="sub-copy">楽譜が読めなくても、ブランクがあっても大丈夫。<br class="sp-br">あなたのペースで、心豊かな音楽時間を始めませんか。</p>
-            
-            <div class="hero-price-display">
-                <span class="label">半年限定の特別プラン</span>
-                <div class="price-line">
-                    <span class="price-main">3,980</span>
-                    <span class="unit">円<small>/月</small></span>
-                </div>
-                <span class="note">入会金・施設費すべて込み</span>
-            </div>
+  <header>
+    <div class="header-container">
+      <div class="header-badge">大人のピアノレッスン｜月額3,980円・半年限定</div>
+      <h1>人生に、美しい音楽の時間を。<br>大人のためのピアノレッスン</h1>
+      <p class="sub-copy">楽譜が読めなくても、ブランクがあっても大丈夫。<br class="sp-br">あなたのペースで、心豊かな音楽時間を始めませんか。</p>
 
-            <div class="trust-badges">
-                <div class="badge-item"><i class="fas fa-check-circle"></i> 入会金0円</div>
-                <div class="badge-item"><i class="fas fa-calendar-alt"></i> 途中解約可能</div>
-                <div class="badge-item"><i class="fas fa-graduation-cap"></i> 講師資格100%</div>
-            </div>
-
-            <p class="local-info-fv">滋賀・大津北部で開講中</p>
-
-            <div class="cta-wrapper">
-                <a href="#form" class="cta-button">
-                    <i class="fas fa-music button-icon"></i>
-                    無料体験レッスンのご予約
-                </a>
-                <div class="cta-wrapper">
-    <a href="tel:0740-22-2063" class="cta-button">
-        <i class="fas fa-phone button-icon"></i>お電話でのお問い合わせ
-    </a>
-</div>
-                <span class="micro-copy">お気軽にお問い合わせください</span>
-            </div>
+      <div class="hero-price-display" role="region" aria-label="料金のご案内">
+        <span class="label">半年限定の特別プラン</span>
+        <div class="price-line">
+          <span class="price-main" aria-label="月額3,980円">3,980</span>
+          <span class="unit">円<small>/月</small></span>
         </div>
-    </header>
+        <span class="note">入会金・施設費すべて込み</span>
+      </div>
 
-    <div class="container">
-        <div class="main-card">
-            <section>
-                <h2>このような方におすすめです</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
-                        <h3 class="feature-title">人生の新しい章を</h3>
-                        <p>子育てが一段落し、自分の時間を大切にしたい方</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-clock"></i></div>
-                        <h3 class="feature-title">昔の想いを再び</h3>
-                        <p>以前習っていて、もう一度始めたい方</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-seedling"></i></div>
-                        <h3 class="feature-title">初めての挑戦</h3>
-                        <p>楽譜に自信がなくても始めたい方</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-heart"></i></div>
-                        <h3 class="feature-title">憧れの曲を</h3>
-                        <p>好きな曲を弾けるようになりたい方</p>
-                    </div>
-                </div>
-            </section>
+      <div class="trust-badges" aria-label="特長">
+        <div class="badge-item"><i class="fas fa-check-circle" aria-hidden="true"></i> 入会金0円</div>
+        <div class="badge-item"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 途中解約可能</div>
+        <div class="badge-item"><i class="fas fa-graduation-cap" aria-hidden="true"></i> 講師資格100%</div>
+      </div>
 
-            <section class="price-impact-section">
-                <h2>大人のピアノ教室との比較</h2>
-                <div class="comparison-table-wrapper">
-                    <table class="comparison-table">
-                        <thead>
-                            <tr>
-                                <th>項目</th>
-                                <th>一般的なピアノ教室</th>
-                                <th>当教室の特別コース</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>月謝</td>
-                                <td class="price-cell" style="color: var(--danger-red);">約 8,000円～</td>
-                                <td class="price-cell" style="color: var(--success-green);">3,980円</td>
-                            </tr>
-                            <tr>
-                                <td>レッスン回数</td>
-                                <td>月3～4回</td>
-                                <td>月2回</td>
-                            </tr>
-                            <tr class="our-course">
-                                <td>その他費用</td>
-                                <td>入会金・施設費別途</td>
-                                <td>入会金・施設費込</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p class="lead">「始めたいけれど費用が心配」という方にも<br>安心してお始めいただける価格設定です。</p>
-                <div class="cta-wrapper">
-    <a href="tel:0740-22-2063" class="cta-button">
-        <i class="fas fa-phone button-icon"></i>お電話でのお問い合わせ
-    </a>
-</div>
-            </section>
+      <p class="local-info-fv">滋賀・大津北部で開講中</p>
 
-            <section class="reason-section">
-                <h2>なぜ、この価格でご提供できるのか</h2>
-                <p>「大人になってからピアノを始めるのは敷居が高い」<br>
-                そのような思いを少しでも軽くしたいという想いから、<span class="highlight">半年限定の特別応援プラン</span>をご用意いたしました。<br>
-                音楽は人生を豊かにする素晴らしいものです。まずはお気軽にお始めください。</p>
-            </section>
-
-            <section>
-                <h2>レッスン内容について</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-clock"></i></div>
-                        <h3 class="feature-title">無理のないペース</h3>
-                        <p>月2回・1回30分のゆとりあるレッスン</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-music"></i></div>
-                        <h3 class="feature-title">お好きな曲で</h3>
-                        <p>クラシック・ポピュラーなど、ご希望に合わせて</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-home"></i></div>
-                        <h3 class="feature-title">手ぶらでお越しください</h3>
-                        <p>ご自宅にピアノがなくても問題ございません</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="testimonial-section">
-                <h2>受講者様のお声</h2>
-                <div class="testimonial">
-                    <div class="star-rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-content">「40年ぶりのピアノでしたが、鍵盤に触れるたびに心が躍りました。先生が丁寧にご指導くださるので、楽譜が読めなくても安心してレッスンを受けられます。」</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div>
-                            <div class="author-name">田中 美智子様</div>
-                            <div class="author-info">50代・受講4ヶ月目</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial">
-                    <div class="star-rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                    </div>
-                    <p class="testimonial-content">「子育てが一段落し、自分の時間ができました。この価格でピアノを始められることに感謝しています。半年後には憧れの曲を弾けるようになるのが楽しみです。」</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div>
-                            <div class="author-name">佐藤 恵様</div>
-                            <div class="author-info">40代・受講3ヶ月目</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cta-wrapper">
-                    <a href="#form" class="cta-button">
-                        <i class="fas fa-envelope button-icon"></i>私も体験レッスンを受けてみる
-                    </a>
-                    <span class="micro-copy">あなたも音楽のある豊かな生活を始めませんか</span>
-                </div>
-            </section>
-
-            <section class="lesson-gallery-section">
-                <h2>レッスンの様子</h2>
-                <p class="section-lead">大人の生徒様が楽しくレッスンに取り組まれている様子です</p>
-                <div class="lesson-gallery-grid">
-                    <div class="gallery-item">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <div class="gallery-item">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <div class="gallery-item">
-                        <i class="fas fa-smile"></i>
-                    </div>
-                </div>
-            </section>
-
-            <section class="faq-section">
-                <h2>よくいただくご質問</h2>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>本当に初心者でも大丈夫でしょうか？</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>はい、もちろんです。当教室の生徒様の約60%はピアノ未経験者からお始めいただいております。楽譜が読めなくても、丁寧にご指導いたしますのでご安心ください。</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>自宅にピアノがなくても大丈夫ですか？</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>ピアノは、レッスンで習ったことをご自宅で復習することで、より身につきやすくなります。そのため、ご自宅にも復習用の鍵盤楽器があると理想的です。楽器の種類や置き場所など、ご不明な点はお気軽にご相談ください。</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>何歳まで受講できますか？</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>年齢制限はございません。現在、20代から80代までの幅広い年代の方にお楽しみいただいております。お一人お一人の体力や経験に合わせたレッスンをご提供いたします。</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>どのような講師の方ですか？</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>全員が音楽大学卒業または同等の資格や指導力を持ち、大人への指導経験が豊富な講師です。皆様の「やってみたい」というお気持ちを大切に、優しく丁寧にご指導いたします。</p>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <h2>開催教室のご案内</h2>
-                <div class="locations">
-                    <a href="https://maps.app.goo.gl/woceBD19fQy8i6EBA" target="_blank" rel="noopener noreferrer" class="location-card-link">
-                        <div class="location-card">
-                            <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <p><strong>トリイ今津センター</strong></p>
-                            <p>滋賀県高島市</p>
-                        </div>
-                    </a>
-                    <a href="https://maps.app.goo.gl/2NzCaYnekY9dgNd3A" target="_blank" rel="noopener noreferrer" class="location-card-link">
-                        <div class="location-card">
-                            <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <p><strong>サウンドステーションあどがわ</strong></p>
-                            <p>滋賀県高島市</p>
-                        </div>
-                    </a>
-                    <a href="https://maps.app.goo.gl/uc89aTyC3fRNkBjW9" target="_blank" rel="noopener noreferrer" class="location-card-link">
-                        <div class="location-card">
-                            <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <p><strong>大津わにセンター</strong></p>
-                            <p>滋賀県大津市</p>
-                        </div>
-                    </a>
-                    <a href="https://maps.app.goo.gl/g3pmCy1hihgXVNUg9" target="_blank" rel="noopener noreferrer" class="location-card-link">
-                        <div class="location-card">
-                            <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <p><strong>朽木会場</strong></p>
-                            <p>滋賀県高島市</p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-
-            <section class="application-flow-section">
-                <h2>お申し込みの流れ</h2>
-                <div class="flow-steps">
-                    <div class="flow-step">
-                        <div class="flow-step-icon"><i class="fas fa-edit"></i></div>
-                        <h3>STEP 1</h3>
-                        <p>お申込みフォームにご入力<br>（約2分）</p>
-                    </div>
-                    <div class="flow-step">
-                        <div class="flow-step-icon"><i class="fas fa-phone-alt"></i></div>
-                        <h3>STEP 2</h3>
-                        <p>担当者より日程調整の<br>ご連絡</p>
-                    </div>
-                    <div class="flow-step">
-                        <div class="flow-step-icon"><i class="fas fa-music"></i></div>
-                        <h3>STEP 3</h3>
-                        <p>無料体験レッスン<br>受講</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="form" class="final-cta-container">
-                <h3>憧れのピアノ、今日から始めませんか</h3>
-                <p class="sub-heading-cta">月額<span class="highlight">3,980円</span>・半年限定の特別プラン</p>
-
-                <div class="form-container">
-  <h3>無料体験レッスンお申込み</h3>
-  <iframe
-  src="https://www.toriimusic.co.jp/7632/"
-  style="width:100%; height:1800px; border:0; overflow:hidden;"
-  loading="lazy"
-  title="無料体験レッスン申し込みフォーム">
-</iframe>
-</div>
-                <span class="micro-copy">※ご入力いただいた情報は無料体験レッスンのご連絡のみに使用いたします</span>
-            </section>
+      <div class="cta-wrapper">
+        <a href="#form" class="cta-button">
+          <i class="fas fa-music button-icon" aria-hidden="true"></i>
+          無料体験レッスンのご予約
+        </a>
+        <div class="cta-wrapper">
+          <a href="tel:0740-22-2063" class="cta-button" data-gtm="tel-cta" aria-label="お電話でのお問い合わせ 0740-22-2063">
+            <i class="fas fa-phone button-icon" aria-hidden="true"></i>お電話でのお問い合わせ
+          </a>
         </div>
+        <span class="micro-copy">お気軽にお問い合わせください</span>
+      </div>
     </div>
+  </header>
 
-    <footer class="site-footer">
-        <div class="footer-container">
-            <div class="footer-info">
-                <p class="company-name">株式会社トリイ</p>
-                <a href="tel:0740-22-2063" class="footer-phone-button">
-                    <i class="fas fa-phone-alt"></i> 0740-22-2063
-                </a>
-                <p class="phone-note">受付時間 10:30-19:30（月曜定休）</p>
-            </div>
-            <div class="footer-social">
-                <p>公式SNSもご覧ください</p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/torii__music/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://x.com/toriimusic" target="_blank" rel="noopener noreferrer" aria-label="X (旧Twitter)">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <p>© 2024 株式会社トリイ. All Rights Reserved.</p>
-            </div>
+  <div class="container">
+    <div class="main-card">
+      <section>
+        <h2>このような方におすすめです</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-leaf" aria-hidden="true"></i></div>
+            <h3 class="feature-title">人生の新しい章を</h3>
+            <p>子育てが一段落し、自分の時間を大切にしたい方</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-clock" aria-hidden="true"></i></div>
+            <h3 class="feature-title">昔の想いを再び</h3>
+            <p>以前習っていて、もう一度始めたい方</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-seedling" aria-hidden="true"></i></div>
+            <h3 class="feature-title">初めての挑戦</h3>
+            <p>楽譜に自信がなくても始めたい方</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-heart" aria-hidden="true"></i></div>
+            <h3 class="feature-title">憧れの曲を</h3>
+            <p>好きな曲を弾けるようになりたい方</p>
+          </div>
         </div>
-    </footer>
+      </section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // FAQアコーディオン
-            document.querySelectorAll('.faq-question').forEach(question => {
-                question.addEventListener('click', () => {
-                    const faqItem = question.parentElement;
-                    faqItem.classList.toggle('active');
-                });
-            });
+      <section class="price-impact-section">
+        <h2>大人のピアノ教室との比較</h2>
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table" aria-describedby="price-compare-desc">
+            <caption id="price-compare-desc" class="sr-only">一般的な教室と当教室の特別コースの料金・回数・費用比較</caption>
+            <thead>
+              <tr>
+                <th scope="col">項目</th>
+                <th scope="col">一般的なピアノ教室</th>
+                <th scope="col">当教室の特別コース</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>月謝</td>
+                <td class="price-cell" style="color: var(--danger-red);">約 8,000円～</td>
+                <td class="price-cell" style="color: var(--success-green);">3,980円</td>
+              </tr>
+              <tr>
+                <td>レッスン回数</td>
+                <td>月3～4回</td>
+                <td>月2回</td>
+              </tr>
+              <tr class="our-course">
+                <td>その他費用</td>
+                <td>入会金・施設費別途</td>
+                <td>入会金・施設費込</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="lead">「始めたいけれど費用が心配」という方にも<br>安心してお始めいただける価格設定です。</p>
+        <div class="cta-wrapper">
+          <a href="tel:0740-22-2063" class="cta-button" data-gtm="tel-cta" aria-label="お電話でのお問い合わせ 0740-22-2063">
+            <i class="fas fa-phone button-icon" aria-hidden="true"></i>お電話でのお問い合わせ
+          </a>
+        </div>
+      </section>
 
-            // フォーム送信処理
-            const form = document.getElementById('application-form');
-            if (form) {
-                form.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    const name = document.getElementById('name').value;
-                    const location = document.getElementById('location').value;
-                    
-                    alert(`${name}様、${location}での無料体験レッスンにお申込みいただき、ありがとうございます。\n担当者より24時間以内にご連絡いたします。`);
-                    
-                    this.reset();
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
-            }
+      <section class="reason-section">
+        <h2>なぜ、この価格でご提供できるのか</h2>
+        <p>「大人になってからピアノを始めるのは敷居が高い」<br>
+        そのような思いを少しでも軽くしたいという想いから、<span class="highlight">半年限定の特別応援プラン</span>をご用意いたしました。<br>
+        音楽は人生を豊かにする素晴らしいものです。まずはお気軽にお始めください。</p>
+      </section>
+
+      <section>
+        <h2>レッスン内容について</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-clock" aria-hidden="true"></i></div>
+            <h3 class="feature-title">無理のないペース</h3>
+            <p>月2回・1回30分のゆとりあるレッスン</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-music" aria-hidden="true"></i></div>
+            <h3 class="feature-title">お好きな曲で</h3>
+            <p>クラシック・ポピュラーなど、ご希望に合わせて</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-home" aria-hidden="true"></i></div>
+            <h3 class="feature-title">手ぶらでお越しください</h3>
+            <p>ご自宅にピアノがなくても問題ございません</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <h2>受講者様のお声</h2>
+        <div class="testimonial">
+          <div class="star-rating">
+            <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+          </div>
+          <p class="testimonial-content">「40年ぶりのピアノでしたが、鍵盤に触れるたびに心が躍りました。先生が丁寧にご指導くださるので、楽譜が読めなくても安心してレッスンを受けられます。」</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user" aria-hidden="true"></i>
+            </div>
+            <div>
+              <div class="author-name">田中 美智子様</div>
+              <div class="author-info">50代・受講4ヶ月目</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="star-rating">
+            <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="far fa-star" aria-hidden="true"></i>
+          </div>
+          <p class="testimonial-content">「子育てが一段落し、自分の時間ができました。この価格でピアノを始められることに感謝しています。半年後には憧れの曲を弾けるようになるのが楽しみです。」</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <i class="fas fa-user" aria-hidden="true"></i>
+            </div>
+            <div>
+              <div class="author-name">佐藤 恵様</div>
+              <div class="author-info">40代・受講3ヶ月目</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-wrapper">
+          <a href="#form" class="cta-button">
+            <i class="fas fa-envelope button-icon" aria-hidden="true"></i>私も体験レッスンを受けてみる
+          </a>
+          <span class="micro-copy">あなたも音楽のある豊かな生活を始めませんか</span>
+        </div>
+      </section>
+
+      <section class="lesson-gallery-section">
+        <h2>レッスンの様子</h2>
+        <p class="section-lead">大人の生徒様が楽しくレッスンに取り組まれている様子です</p>
+        <div class="lesson-gallery-grid" aria-label="レッスン風景のイメージ">
+          <div class="gallery-item">
+            <i class="fas fa-music" aria-hidden="true"></i>
+          </div>
+          <div class="gallery-item">
+            <i class="fas fa-hands-helping" aria-hidden="true"></i>
+          </div>
+          <div class="gallery-item">
+            <i class="fas fa-smile" aria-hidden="true"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <h2>よくいただくご質問</h2>
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a1">
+            <span>本当に初心者でも大丈夫でしょうか？</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </div>
+          <div class="faq-answer" id="faq-a1" role="region" aria-label="初心者でも大丈夫かの回答">
+            <p>はい、もちろんです。当教室の生徒様の約60%はピアノ未経験者からお始めいただいております。楽譜が読めなくても、丁寧にご指導いたしますのでご安心ください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a2">
+            <span>自宅にピアノがなくても大丈夫ですか？</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </div>
+          <div class="faq-answer" id="faq-a2" role="region" aria-label="自宅にピアノがない場合の回答">
+            <p>ピアノは、レッスンで習ったことをご自宅で復習することで、より身につきやすくなります。そのため、ご自宅にも復習用の鍵盤楽器があると理想的です。楽器の種類や置き場所など、ご不明な点はお気軽にご相談ください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a3">
+            <span>何歳まで受講できますか？</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </div>
+          <div class="faq-answer" id="faq-a3" role="region" aria-label="年齢についての回答">
+            <p>年齢制限はございません。現在、20代から80代までの幅広い年代の方にお楽しみいただいております。お一人お一人の体力や経験に合わせたレッスンをご提供いたします。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-a4">
+            <span>どのような講師の方ですか？</span>
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+          </div>
+          <div class="faq-answer" id="faq-a4" role="region" aria-label="講師についての回答">
+            <p>全員が音楽大学卒業または同等の資格や指導力を持ち、大人への指導経験が豊富な講師です。皆様の「やってみたい」というお気持ちを大切に、優しく丁寧にご指導いたします。</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>開催教室のご案内</h2>
+        <div class="locations">
+          <a href="https://maps.app.goo.gl/woceBD19fQy8i6EBA" target="_blank" rel="noopener noreferrer" class="location-card-link">
+            <div class="location-card">
+              <div class="location-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+              <p><strong>トリイ今津センター</strong></p>
+              <p>滋賀県高島市</p>
+            </div>
+          </a>
+          <a href="https://maps.app.goo.gl/2NzCaYnekY9dgNd3A" target="_blank" rel="noopener noreferrer" class="location-card-link">
+            <div class="location-card">
+              <div class="location-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+              <p><strong>サウンドステーションあどがわ</strong></p>
+              <p>滋賀県高島市</p>
+            </div>
+          </a>
+          <a href="https://maps.app.goo.gl/uc89aTyC3fRNkBjW9" target="_blank" rel="noopener noreferrer" class="location-card-link">
+            <div class="location-card">
+              <div class="location-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+              <p><strong>大津わにセンター</strong></p>
+              <p>滋賀県大津市</p>
+            </div>
+          </a>
+          <a href="https://maps.app.goo.gl/g3pmCy1hihgXVNUg9" target="_blank" rel="noopener noreferrer" class="location-card-link">
+            <div class="location-card">
+              <div class="location-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+              <p><strong>朽木会場</strong></p>
+              <p>滋賀県高島市</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="application-flow-section">
+        <h2>お申し込みの流れ</h2>
+        <div class="flow-steps">
+          <div class="flow-step">
+            <div class="flow-step-icon"><i class="fas fa-edit" aria-hidden="true"></i></div>
+            <h3>STEP 1</h3>
+            <p>お申込みフォームにご入力<br>（約2分）</p>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-icon"><i class="fas fa-phone-alt" aria-hidden="true"></i></div>
+            <h3>STEP 2</h3>
+            <p>担当者より日程調整の<br>ご連絡</p>
+          </div>
+          <div class="flow-step">
+            <div class="flow-step-icon"><i class="fas fa-music" aria-hidden="true"></i></div>
+            <h3>STEP 3</h3>
+            <p>無料体験レッスン<br>受講</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="form" class="final-cta-container">
+        <h3>憧れのピアノ、今日から始めませんか</h3>
+        <p class="sub-heading-cta">月額<span class="highlight">3,980円</span>・半年限定の特別プラン</p>
+        <div class="form-container">
+          <h3>無料体験レッスンお申込み</h3>
+
+          <form action="https://formsubmit.co/yoshida@toriimusic.co.jp" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="大人のピアノLPから新規お申込み">
+            <input type="hidden" name="_next" value="https://kens-pro.github.io/otona3980/#thanks">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none" autocomplete="off">
+
+            <div>
+              <label for="name">お名前<span class="required">必須</span></label>
+              <input type="text" id="name" name="お名前" required autocomplete="name">
+            </div>
+
+            <div>
+              <label for="phone">お電話番号<span class="required">必須</span></label>
+              <input type="tel" id="phone" name="電話番号" required placeholder="例: 090-1234-5678" autocomplete="tel" inputmode="tel" pattern="^[0-9０-９+\-\s]+$" title="数字・スペース・ハイフン・+ のみで入力してください">
+            </div>
+
+            <div>
+              <label for="location">ご希望の教室<span class="required">必須</span></label>
+              <select id="location" name="ご希望の教室" required autocomplete="off">
+                <option value="">選択してください</option>
+                <option value="今津センター（高島市）">今津センター（高島市）</option>
+                <option value="サウンドステーションあどがわ（高島市）">サウンドステーションあどがわ（高島市）</option>
+                <option value="大津わにセンター（大津市）">大津わにセンター（大津市）</option>
+                <option value="朽木会場（高島市）">朽木会場（高島市）</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message">ご希望・ご質問など</label>
+              <textarea id="message" name="メッセージ" rows="4" placeholder="例: 平日の午前中を希望しております"></textarea>
+            </div>
+
+            <button type="submit" class="cta-button">
+              <i class="fas fa-paper-plane button-icon" aria-hidden="true"></i>無料体験レッスンにお申込み
+            </button>
+          </form>
+
+          <span class="micro-copy">※ご入力いただいた情報は無料体験レッスンのご連絡のみに使用いたします</span>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <section id="thanks" class="final-cta-container" style="display:none;">
+    <h3>お申込みありがとうございました</h3>
+    <p class="sub-heading-cta">担当者より24時間以内にご連絡いたします。</p>
+  </section>
+
+  <script>
+    // #thanks に遷移して来たらサンクス表示
+    if (location.hash === '#thanks') {
+      const t = document.getElementById('thanks');
+      if (t) t.style.display = 'block';
+      t && t.scrollIntoView({behavior:'smooth'});
+    }
+
+    // FAQアコーディオン（クリック/Enter/Space対応）
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.faq-item').forEach(item => {
+        const q = item.querySelector('.faq-question');
+        const ans = item.querySelector('.faq-answer');
+        const toggle = () => {
+          const expanded = q.getAttribute('aria-expanded') === 'true';
+          q.setAttribute('aria-expanded', String(!expanded));
+          item.classList.toggle('active');
+        };
+        q.addEventListener('click', toggle);
+        q.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggle();
+          }
         });
-    </script>
+      });
+    });
+  </script>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <p class="company-name">株式会社トリイ</p>
+        <a href="tel:0740-22-2063" class="footer-phone-button" data-gtm="tel-footer" aria-label="電話 0740-22-2063">
+          <i class="fas fa-phone-alt" aria-hidden="true"></i> 0740-22-2063
+        </a>
+        <p class="phone-note">受付時間 10:30-19:30（月曜定休）</p>
+      </div>
+      <div class="footer-social">
+        <p>公式SNSもご覧ください</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/torii__music/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://x.com/toriimusic" target="_blank" rel="noopener noreferrer" aria-label="X (旧Twitter)">
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2024 株式会社トリイ. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
