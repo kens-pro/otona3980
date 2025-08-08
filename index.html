@@ -152,6 +152,24 @@
     .lesson-gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
     .gallery-item{aspect-ratio:4/3;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px var(--shadow-soft);display:flex;align-items:center;justify-content:center;background:var(--bg-section);border:1px solid var(--border-light)}
     .gallery-item i{font-size:48px;color:var(--text-light)}
+    /* 画像用スタイルの追加 */
+.gallery-item {
+  position: relative;          /* 角丸や影を保ちつつ中身をフィット */
+  overflow: hidden;            /* はみ出しをカット（角丸を活かす） */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* 4:3 の枠いっぱいにトリミングして美しく見せる */
+  display: block;
+}
+
+/* ちょこっとだけリッチにしたい場合のホバー演出（任意） */
+.gallery-item:hover img {
+  transform: scale(1.02);
+  transition: transform 0.25s ease;
+}
 
     /* FAQ */
     .faq-section{margin:48px 0}
@@ -462,21 +480,24 @@
         </div>
       </section>
 
-      <section class="lesson-gallery-section">
-        <h2>レッスンの様子</h2>
-        <p class="section-lead">大人の生徒様が楽しくレッスンに取り組まれている様子です</p>
-        <div class="lesson-gallery-grid" aria-label="レッスン風景のイメージ">
-          <div class="gallery-item">
-            <i class="fas fa-music" aria-hidden="true"></i>
-          </div>
-          <div class="gallery-item">
-            <i class="fas fa-hands-helping" aria-hidden="true"></i>
-          </div>
-          <div class="gallery-item">
-            <i class="fas fa-smile" aria-hidden="true"></i>
-          </div>
-        </div>
-      </section>
+     <section class="lesson-gallery-section">
+  <h2>レッスンの様子</h2>
+  <p class="section-lead">大人の生徒様が楽しくレッスンに取り組まれている様子です</p>
+  <div class="lesson-gallery-grid" aria-label="レッスン風景のイメージ">
+    <div class="gallery-item">
+      <img src="images/Image_fx.jpg" alt="レッスン風景1" loading="lazy" decoding="async">
+    </div>
+    <div class="gallery-item">
+      <img src="images/Image_fx-(3).jpg" alt="レッスン風景2" loading="lazy" decoding="async">
+    </div>
+    <div class="gallery-item">
+      <img src="images/Image_fx (5).jpg" alt="レッスン風景3" loading="lazy" decoding="async">
+    </div>
+    <div class="gallery-item">
+      <img src="images/Image_fx (7).jpg" alt="レッスン風景4" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
 
       <section class="faq-section">
         <h2>よくいただくご質問</h2>
